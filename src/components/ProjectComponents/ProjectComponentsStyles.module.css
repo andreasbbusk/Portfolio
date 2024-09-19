@@ -1,0 +1,156 @@
+.project_title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.project_hr {
+    margin-bottom: 5rem;
+}
+
+.header {
+    color: var(--txt-clr);
+    line-height: 1;
+}
+
+video,
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
+
+
+
+.description_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
+    margin: 3rem 0;
+}
+
+.description_container a {
+    color: var(--txt-clr);
+}
+
+.description_container>* {
+    color: var(--txt-clr);
+}
+
+.key_info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.key_info_box {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.key_info_box>div {
+    border-left: solid 0.5px var(--txt-clr);
+    border-right: solid 0.5px var(--txt-clr);
+    padding: 0 1rem;
+}
+
+.key_info_box p {
+    font-size: 1rem;
+}
+
+.key_info_box h5 {
+    font-weight: 600;
+}
+
+.description p,
+.solution p {
+    font-size: 1rem;
+}
+
+.image_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    gap: 1rem;
+
+    margin: 12rem 0 10rem 0;
+}
+
+
+.content_vids {
+    grid-column: span 2;
+}
+
+
+
+
+.project_navigation {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 12rem 0 10rem 0;
+}
+
+.project_navigation>.navigation_links {
+    align-items: flex-end;
+}
+
+.project_line {
+    width: 100px;
+    height: 1px;
+    background-color: var(--txt-clr);
+}
+
+.navigation_header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.navigation_header h4 {
+    color: var(--txt-clr);
+    font-weight: 400;
+}
+
+.navigation_links {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation_links a {
+    color: var(--txt-clr);
+}
+
+.link_box {
+    display: flex;
+    flex-direction: column;
+}
+
+.link_box a {
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 1024px) {
+    
+    .description_container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .key_info_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .header {
+        font-size: 3rem;
+    }
+    
+}

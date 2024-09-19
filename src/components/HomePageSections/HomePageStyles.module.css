@@ -1,0 +1,379 @@
+/* Hero section */
+
+.hero_header {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_subheader {
+    margin: 2rem 0 0 0;
+    max-width: 800px;
+}
+
+.hero_title {
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.indent {
+    text-indent: 12.5rem;
+}
+
+.indent2 {
+    text-indent: -15rem;
+}
+
+.bd_header {
+    background-color: rgba(253, 201, 60, 0.4);
+    font-style: italic;
+    width: fit-content;
+}
+
+.hero_port {
+    text-transform: uppercase;
+    font-weight: 601;
+    font-size: 1.5rem;
+    margin: 3rem 0 8rem 0;
+}
+
+
+/* About section */
+
+.about {
+    width: 100%;
+    margin: 5rem auto;
+}
+
+.about_title h1 {
+    display: flex;
+    justify-content: center;
+    
+    font-size: 4rem;
+    text-align: center;
+}
+
+
+.about_topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about_topline h4 {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.about_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin: 10rem 0;
+}
+
+.about_section img {
+    border-radius: 50%;
+}
+
+.about_info {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+}
+
+.info_header {
+    font-weight: 400;
+    font-size: 3rem;
+
+    margin: 0 0 2rem 0;
+}
+
+.about_toolbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    margin: 3rem 0;
+}
+
+
+.btn {
+    background: none;
+    border: solid 1px #000;
+    border-radius: 24px;
+
+    padding: 0.5rem 1rem;
+    margin: 2rem 0;
+    max-width: fit-content;
+
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+.btn:active {
+    scale: 1.1;
+}
+
+.red_dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #fb4566;
+}
+
+.about_toolbox h2 {
+    font-size: 2.2rem;
+    font-stretch: ultra-condensed;
+}
+
+.about_toolbox h3 {
+    font-size: 1.5rem;
+}
+
+.about_toolbox p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.tech_stack {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    max-width: 700px;
+    column-gap: 1.5rem;
+    row-gap: 1.5rem;
+}
+
+.tech_icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.skill_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    max-width: 700px;
+}
+
+.skill_list {
+    margin: 1rem 0;
+}
+
+.skill_list h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.skill_list p {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 5px 0;
+}
+
+/* Project works */
+
+.works_header {
+    display: flex;
+    gap: 4px;
+
+    font-size: 2rem;
+    margin: 0;
+}
+
+.vertical_line {
+    background-color: black;
+    margin: 8rem 0;
+
+    transform: translate(-50%);
+    width: 2px;
+    height: 7rem;
+    border-radius: 2px;
+    opacity: 1;
+    overflow: hidden;
+}
+
+.vertical_line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--secondary-clr);
+    height: 100%;
+    width: 100%;
+    animation: scrolling 2s infinite ease-in-out;
+}
+
+@keyframes scrolling {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    70% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+.project_container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 1320px) {
+    .about_title {
+        font-size: 4rem;
+    }
+
+    .indent2 {
+        text-indent: -6rem;
+    }
+
+}
+
+@media (max-width: 1220px) {
+    .about_title {
+        font-size: 3rem;
+    }
+
+    .about_title h1 {
+        font-size: 3rem;
+    }
+
+    .about_info h2 {
+        font-size: 2rem;
+    }
+
+    .about_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about_toolbox h2 {
+        font-size: 2rem;
+    }
+    
+    .about_toolbox h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tech_stack p {
+        font-size: 1.5rem;
+    }
+
+    .vertical_line {
+        margin: 3rem;
+    }
+}
+
+@media (max-width: 970px) {
+    .about_title h1 {        
+        font-size: 2rem;
+    }
+
+    .about_toolbox {
+        flex-direction: column;
+    }
+
+    .skill_container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .work_title {
+        font-size: 4rem;
+    }
+
+    .works_header {
+        font-size: 1.5rem;
+    }
+
+    .works_body {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .tech_stack {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 850px) {
+   
+    .hero_subheader p {
+        font-size: 1rem;
+    }
+
+    .hero_port {
+        font-size: 1rem;
+    }
+
+    .about_info h2 {
+        font-size: 1.7rem;
+    }
+
+    .about_section p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .about_section img {
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+    .about_section {
+        margin: 3rem 0;
+    }
+
+    .hero_port {
+        margin-bottom: 0;
+    }
+
+    .work_title {
+        font-size: 2.5rem;
+    }
+
+    .works_header {
+        font-size: 1rem;
+    }
+}
+
